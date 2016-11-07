@@ -1,13 +1,11 @@
 #include<stdlib.h>
 #include<stdio.h>
-
-
 int main()
 {
 int pid;
 int status = 0;
-int Ppid,Cpid;
-for(int i=0;i<3;i++)
+int Ppid,Cpid,i;
+for(i=0;i<3;i++)
 {
 	pid = fork();
 	if(pid!=0)
@@ -24,5 +22,5 @@ for(int i=0;i<3;i++)
 		exit(status);
 	}
 }
-return 0;
+
 }
